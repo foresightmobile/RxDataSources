@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "Differentiator", targets: ["Differentiator"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/foresightmobile/RxSwift.git", .branch("removing-uiwebkit")),
+        .package(url: "https://github.com/foresightmobile/RxSwift", .branch("removing-uiwebkit")),
     ],
     targets: [
         .target(name: "RxDataSources", dependencies: ["Differentiator", "RxSwift", "RxCocoa"]),
